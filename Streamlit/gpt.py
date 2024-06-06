@@ -35,13 +35,12 @@ with open(file_paths_path, 'r', encoding='utf-8') as f:
 # Load all documents
 documents = []
 for path in file_paths:
-    full_path = os.path.join(vector_db_dir, path)  # Ensure the path is correct relative to the vector_db_dir
+    # Correct the path to make it relative to the VectorDB directory
+    full_path = os.path.join(vector_db_dir, path[3:])  # Remove the initial '../' from the path
     if not os.path.isfile(full_path):
         raise FileNotFoundError(f"문서 파일을 찾을 수 없습니다: {full_path}")
     with open(full_path, 'r', encoding='utf-8') as file:
         documents.append(file.read())
-
-
 
 # 파일 경로와 링크 URL 매핑
 file_path_to_url = {
