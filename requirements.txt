@@ -1,0 +1,8 @@
+langchain==0.0.89
+openai==0.27.1
+streamlit==1.18.1
+faiss-cpu==1.7.3
+googletrans==4.0.0-rc1
+altair==4.2.0
+langdetect==1.0.9
+python-dotenv
