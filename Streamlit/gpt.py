@@ -12,40 +12,35 @@ api_key = os.getenv('API_KEY')
 if not api_key:
     raise FileNotFoundError("환경 변수를 찾을 수 없습니다.")
 
-# .env 파일 로드
-# dotenv_path = find_dotenv()
-#if dotenv_path:
-#    load_dotenv(dotenv_path)
-#else:
-#    raise FileNotFoundError(".env 파일을 찾을 수 없습니다.")
-
-# 환경 변수에서 API 키 가져오기
-#api_key = os.getenv('OPENAI_API_KEY')
-#if api_key is None:
-#    raise ValueError("OPENAI_API_KEY 환경 변수가 설정되지 않았습니다.")
-openai.api_key = api_key
-
-
+# Get the current script directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
 vector_db_dir = os.path.join(current_dir, '..', 'VectorDB')
-# # 현재 디렉토리 설정
-# current_dir = os.getcwd()
-# vector_db_dir = os.path.join(current_dir, '..\VectorDB')
 
-# FAISS 인덱스 로드
-index = faiss.read_index(os.path.join(vector_db_dir, 'vector_db.index'))
-index_dimension = index.d  # 인덱스의 차원 확인
+# Load FAISS index
+index_path = os.path.join(vector_db_dir, 'vector_db.index')
+if not os.path.isfile(index_path):
+    raise FileNotFoundError(f"FAISS 인덱스 파일을 찾을 수 없습니다: {index_path}")
 
-# 파일 경로 로드
-with open(os.path.join(vector_db_dir, 'file_paths.txt'), 'r', encoding='utf-8') as f:
+index = faiss.read_index(index_path)
+index_dimension = index.d  # Check the dimension of the index
+
+# Load file paths
+file_paths_path = os.path.join(vector_db_dir, 'file_paths.txt')
+if not os.path.isfile(file_paths_path):
+    raise FileNotFoundError(f"파일 경로 파일을 찾을 수 없습니다: {file_paths_path}")
+
+with open(file_paths_path, 'r', encoding='utf-8') as f:
     file_paths = [line.strip() for line in f]
 
-# 모든 문서 로드
+# Load all documents
 documents = []
 for path in file_paths:
-    print(path)
-    with open(path, 'r', encoding='utf-8') as file:
+    full_path = os.path.join(vector_db_dir, path)  # Ensure the path is correct relative to the vector_db_dir
+    if not os.path.isfile(full_path):
+        raise FileNotFoundError(f"문서 파일을 찾을 수 없습니다: {full_path}")
+    with open(full_path, 'r', encoding='utf-8') as file:
         documents.append(file.read())
+
 
 
 # 파일 경로와 링크 URL 매핑
