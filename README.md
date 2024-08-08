@@ -1,4 +1,4 @@
-![Group 1](https://github.com/jaehee831/gist-policy-bot/assets/45239582/c8040cb6-c5b3-4708-80fd-3332f1d8b8e7)
+![logo](https://github.com/user-attachments/assets/cceee778-2a3b-4e86-a187-996cbb8ab153)
 # POLIGI : Gist-policy-bot
 광주과학기술원 원내규정집 바탕 챗봇
 
@@ -9,16 +9,16 @@
 * 24.05.05 - 22.06.06
 
 ## 개발 환경
-![temp_1717685961465 853110627](https://github.com/jaehee831/gist-policy-bot/assets/79001832/cdf84611-959a-4116-8601-5c14166561ba)
+![stack](https://github.com/user-attachments/assets/45510c0a-b06a-45e7-aed2-b79a50ca5027)
 
 ## 팀원
 | 배성호 [@oy6uns](https://github.com/oy6uns) | 전우석 [@usok1ng](https://github.com/usok1ng) | 최원혁 [@Wonhyeok316](https://github.com/Wonhyeok316) | 이재희 [@jaehee831](https://github.com/jaehee831) | 지유나 [@younaji](https://github.com/younaji) |
 | :---: | :---: | :---: | :---: | :---: |
-|<img width="900" src="https://github.com/jaehee831/gist-policy-bot/assets/45239582/708221c9-ecd6-4fce-ae84-dc0e06489005">|<img width="800" src="https://github.com/jaehee831/gist-policy-bot/assets/45239582/e4dbced3-ac8d-4dc1-af2f-332361976e1d">|<img width="600" src="https://github.com/jaehee831/gist-policy-bot/assets/45239582/93c1054f-7d1f-4dbb-8dc2-97da7e185dd5">|<img width="800" src="https://github.com/jaehee831/gist-policy-bot/assets/45239582/df63249d-f1ed-4042-82ba-8e75b4cef258">|<img width="900" src="https://github.com/jaehee831/gist-policy-bot/assets/45239582/cfe58a2e-3921-4a9d-9f37-373d2b5c73a5">|
+|<img width="800" src="https://github.com/user-attachments/assets/7b17c2c0-05ad-408a-be3e-fe9de9b2e46b">|<img width="800" src="https://github.com/user-attachments/assets/6ae08a8a-dfec-4f0b-ac63-a3102012168a">|<img width="800" src="https://github.com/user-attachments/assets/cf3a264f-50a3-4e6d-904d-4e23a6548add">|<img width="800" src="https://github.com/user-attachments/assets/5dcb188c-4480-420f-85fa-0b68fe8a56d6">|<img width="800" src="https://github.com/user-attachments/assets/a6595110-2a11-4f14-bb97-eaa56b3c0ac4">|
 - 배성호 - 발표 자료 제작, 제품 프로토타입 제작, 데이터 전처리 및 수집
 - 전우석 - 발표 자료 제작, 인터뷰, 데이터 전처리 및 수집
 - 최원혁 - RAG 기능 구현 및 파이프라인 연결, 텍스트 파일 DB화
-- 이재희 - 인터뷰, 프론트엔드(Streamlit) 제작
+- 이재희 - 인터뷰, 프론트엔드(Streamlit) 제작, 데이터 전처리 및 수집
 - 지유나 - 프롬프트 엔지니어링, 데이터 전처리 및 수집
 
   
@@ -43,10 +43,8 @@ streamlit run gpt.py
 
 (환경변수의 OPEN_API_KEY에 자신만의 ChatGPT API Key가 설정되어야 사용 할 수 있음.)
 
-## 활용 예시
-![temp_1717685907741 1018538114](https://github.com/jaehee831/gist-policy-bot/assets/79001832/6a785f1c-3379-4242-92b3-53edd1310240)
 
 ## 실행 화면
-https://github.com/jaehee831/gist-policy-bot/assets/45239582/e2fe326d-36c6-47a3-a018-00e0cdf7ce1f
+https://github.com/user-attachments/assets/6f2f3f03-f982-41a1-a69d-577d12d7303f
 
 
