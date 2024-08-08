@@ -14,7 +14,7 @@
 ## 팀원
 | 배성호 [@oy6uns](https://github.com/oy6uns) | 전우석 [@usok1ng](https://github.com/usok1ng) | 최원혁 [@Wonhyeok316](https://github.com/Wonhyeok316) | 이재희 [@jaehee831](https://github.com/jaehee831) | 지유나 [@younaji](https://github.com/younaji) |
 | :---: | :---: | :---: | :---: | :---: |
-|<img width="800" src="https://github.com/user-attachments/assets/7b17c2c0-05ad-408a-be3e-fe9de9b2e46b">|<img width="800" src="https://github.com/user-attachments/assets/6ae08a8a-dfec-4f0b-ac63-a3102012168a">|<img width="800" src="https://github.com/user-attachments/assets/cf3a264f-50a3-4e6d-904d-4e23a6548add">|<img width="800" src="https://github.com/user-attachments/assets/5dcb188c-4480-420f-85fa-0b68fe8a56d6">|<img width="800" src="https://github.com/user-attachments/assets/a6595110-2a11-4f14-bb97-eaa56b3c0ac4">|
+|<img width="800" src="https://github.com/user-attachments/assets/7b17c2c0-05ad-408a-be3e-fe9de9b2e46b">|<img width="800" src="https://github.com/user-attachments/assets/6ae08a8a-dfec-4f0b-ac63-a3102012168a">|<img width="600" src="https://github.com/user-attachments/assets/cf3a264f-50a3-4e6d-904d-4e23a6548add">|<img width="800" src="https://github.com/user-attachments/assets/5dcb188c-4480-420f-85fa-0b68fe8a56d6">|<img width="800" src="https://github.com/user-attachments/assets/a6595110-2a11-4f14-bb97-eaa56b3c0ac4">|
 - 배성호 - 발표 자료 제작, 제품 프로토타입 제작, 데이터 전처리 및 수집
 - 전우석 - 발표 자료 제작, 인터뷰, 데이터 전처리 및 수집
 - 최원혁 - RAG 기능 구현 및 파이프라인 연결, 텍스트 파일 DB화
